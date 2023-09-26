@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>getElementByTagName()</h1>
+        <p>An unordered list</p>
+        <ul>
+            <li>MCA</li>
+            <li>MBA</li>
+            <li>MS</li>
+        </ul>
+        <p id="d1"></p>
+        <script>
+            const collection=document.getElementsByTagName("li");
+            document.getElementById("d1").innerHTML=collection[1].innerHTML;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <ul>
+            <li>MCA</li>
+            <li>MBA</li>
+            <li>MS</li>
+        </ul>
+        <h1>Show the Tags Used in the WebPage</h1>
+        <p id="d1"></p>
+        <script>
+         const collection=document.getElementsByTagName("*");
+         let txt="";
+         for(let i=0;i<collection.length;i++)
+         {
+            txt+=collection[i].tagName+"<br>";
+         }
+         document.getElementById("d1").innerHTML=txt;
+        </script>
+    </body>
+</html>

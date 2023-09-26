@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            div
+            {
+                border: 1px solid black;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is Example of getElementByClassName()</h1>
+        <div class="example">
+            <p>This is a Para..</p>
+        </div>
+        <br>
+        <div class="example color">
+            <p>This is a Para..</p>
+        </div>
+        <div class="example color">
+            <p>This is a Para..</p>
+        </div>
+        <script>
+            const collection=document.getElementsByClassName("example");
+            collection[0].style.backgroundColor="red";
+        </script>
+    </body>
+</html>
