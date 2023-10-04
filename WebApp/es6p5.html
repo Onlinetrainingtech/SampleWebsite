@@ -1,0 +1,18 @@
+<html> 
+    First Object::<p id="d1"></p>
+    Second Object::<p id="d2"></p>
+    <script>
+        class Product
+        {
+            constructor(pid,pname)
+            {
+                this.pid=pid;
+                this.pname=pname;
+            }
+        }
+        const my1=new Product(1001,"azar");
+        const my2=new Product(1002,"mohamed");
+        document.getElementById("d1").innerHTML=my1.pid+""+my1.pname;
+        document.getElementById("d2").innerHTML=my2.pid+""+my2.pname;
+    </script>
+</html>

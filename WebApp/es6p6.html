@@ -1,0 +1,13 @@
+<html>
+    <h1 id="d1"></h1>
+    <script>
+        const myPromise=new Promise(function(my1,my2){
+            setTimeout(function(){
+                my1("Welcome");
+            },3000);
+        });
+        myPromise.then(function(value){
+            document.getElementById("d1").innerHTML=value;
+        });
+    </script>
+</html>
